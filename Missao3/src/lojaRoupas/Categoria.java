@@ -5,6 +5,16 @@ public class Categoria {
 	private String classificaçaoProdutoSexo;
 	private String  classificaçaoProdutoEtaria;
 	
+	public Categoria (String t , String cla , String et) {
+		tamanhoProduto=t;
+		classificaçaoProdutoSexo=cla;
+		classificaçaoProdutoEtaria=et;
+	}
+	
+	public String toString() {
+		return "O tamanho do produto : " + tamanhoProduto+"  sexo: "+classificaçaoProdutoSexo+"  Faixa etaria : "+ classificaçaoProdutoEtaria;
+	}
+	
 	public String getTamanhoProduto() {
 		return tamanhoProduto;
 	}

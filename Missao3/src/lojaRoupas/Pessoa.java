@@ -4,7 +4,7 @@ public abstract  class Pessoa {
 
 	protected String nome;
 	protected String senha;
-	protected Endereço endereco ;
+	protected Endereco endereco ;
 	
 	public String getNome() {
 	return nome;
@@ -22,10 +22,10 @@ public abstract  class Pessoa {
 			
 		}
 	
-	public Endereço getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 		}
-	public void setEndereco(Endereço endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco=endereco;	
 			
 		}

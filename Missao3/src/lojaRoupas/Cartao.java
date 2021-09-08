@@ -8,6 +8,17 @@ public class Cartao {
 	private String dataVenc;
 	private Cliente cliente;
 	
+	public Cartao (Double n, int i , String no , String d  ) {
+		numeroCartao=n;
+		codigoseg=i;
+		nomeCartao=no;
+		dataVenc=d;
+	}
+	
+	public String toString() {
+		return "Nome do cartao:  "+ nomeCartao +"  numero do cartao: "+ numeroCartao + "  codigo de seguranca: "+ codigoseg + "  data de vencimento: "+ dataVenc;
+	}
+	
 	public double getNumeroCartao() {
 		return numeroCartao;
 	}

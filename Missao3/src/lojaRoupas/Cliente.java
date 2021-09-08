@@ -4,17 +4,19 @@ public class Cliente extends Pessoa {
 
 	private String emailCliente;
 	private Cartao cartaoCliente;
-	private Endereço endereco;
+	private Endereco endereco;
 	
-	public Cliente (String n,String s) {
+	public Cliente (String n,String s,String ec) {
 		nome=n;
 		senha=s;
+		emailCliente=ec;
+		
 		
 
 	}
 	
 	public String toString() {
-		return "nome do aluno:"+nome;
+		return "nome do cliente: "+nome+" senha do cliente: "+senha+" email do cliente "+emailCliente;
 		
 		
 	}
@@ -37,12 +39,12 @@ public class Cliente extends Pessoa {
 		this.cartaoCliente=cartaoCliente;
 		
 	}
-	public Endereço getEndereco(){
+	public Endereco getEndereco(){
 		return endereco;
 		
 	}
 	
-	public void   setEndereço(Endereço endereco) {
+	public void   setEndereço(Endereco endereco) {
 		this.endereco=endereco;
 		
 	}

@@ -1,9 +1,9 @@
 package lojaRoupas;
-
+import java.util.*;
 public class Funcionario extends Pessoa {
 	private double identificador;
 	
-	public Funcionario(String n,double i,String s){
+	public Funcionario(String n,Double i,String s){
 		nome=n;
 		identificador=i;
 		senha=s;
@@ -11,7 +11,7 @@ public class Funcionario extends Pessoa {
 	}
 	
 	public String toString() {
-		return "Nome do funcionário: " + nome + ", ID do funcionário" + identificador;
+		return "Nome do funcionário: " + nome + ", ID do funcionário" + identificador+" senha do funcionário "+senha;
 	}
 	public double getIdentificador() {
 		return identificador;
@@ -30,12 +30,12 @@ public class Funcionario extends Pessoa {
 		
 	}
 	
-	public Endereço getEndereco(){
+	public Endereco getEndereco(){
 		return endereco;
 		
 	}
 	
-	public void   setEndereço(Endereço endereco) {
+	public void   setEndereco(Endereco endereco) {
 		this.endereco=endereco;
 		
 	}

@@ -30,7 +30,7 @@ public class Produto {
 	}
 	
 	public String toString() {
-		return "Nome do produto: " + nomeProduto + ", valor do produto:" +  precoProduto;
+		return "Nome do produto: " + nomeProduto + ", valor do produto:" +  precoProduto+" O estoque do produto é: "+produtoEstoque+"a cor do produto é:"+produtoCor ;
 	}
 	
 	public String getNomeproduto() {
